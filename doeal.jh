@@ -1,0 +1,36 @@
+entity Diario {
+	dataPublicacao LocalDate,
+    ano Integer,
+    numero Integer,
+}
+
+entity Servidor {
+	nome String,
+	cpf String,
+    matricula String,
+    cargo String
+}
+
+entity Concessao {
+	dataAssinatura LocalDate,
+    portaria String,
+    periodoAquisitivo String,
+    tempoAfastamento Integer,
+  	dataInicio LocalDate,
+    dataFinal LocalDate
+}
+
+relationship ManyToMany {
+	Interessado to Processo,
+}
+
+relationship OneToMany {
+	Diario to Concessao,
+} 
+
+relationship OneToOne {
+	Concessao to Servidor,
+}
+
+
+

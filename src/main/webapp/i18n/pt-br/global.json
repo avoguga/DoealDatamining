@@ -7,6 +7,9 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
+        "diario": "Diario",
+        "servidor": "Servidor",
+        "concessao": "Concessao",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -81,9 +84,6 @@
     },
     "field": {
       "id": "Código"
-    },
-    "ribbon": {
-      "dev": "Desenvolvimento"
     },
     "item-count": "Mostrando {{first}} - {{second}} de {{total}} resultados."
   },

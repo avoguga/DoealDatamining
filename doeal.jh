@@ -20,10 +20,6 @@ entity Concessao {
     dataFinal LocalDate
 }
 
-relationship ManyToMany {
-	Interessado to Processo,
-}
-
 relationship OneToMany {
 	Diario to Concessao,
 } 

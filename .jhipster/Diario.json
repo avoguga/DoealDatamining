@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220525210249",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "diario",
+  "fields": [
+    {
+      "fieldName": "dataPublicacao",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "ano",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numero",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Diario",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "concessao",
+      "otherEntityRelationshipName": "diario",
+      "relationshipName": "concessao",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

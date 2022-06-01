@@ -1,0 +1,31 @@
+{
+  "doealDataminingApp": {
+    "concessao": {
+      "home": {
+        "title": "Concessaos",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Concessao",
+        "createOrEditLabel": "Criar ou editar Concessao",
+        "notFound": "Nenhum Concessao encontrado"
+      },
+      "created": "Um novo Concessao foi criado com o identificador {{ param }}",
+      "updated": "Um Concessao foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Concessao foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Concessao {{ id }}?"
+      },
+      "detail": {
+        "title": "Concessao"
+      },
+      "id": "ID",
+      "dataAssinatura": "Data Assinatura",
+      "portaria": "Portaria",
+      "periodoAquisitivo": "Periodo Aquisitivo",
+      "tempoAfastamento": "Tempo Afastamento",
+      "dataInicio": "Data Inicio",
+      "dataFinal": "Data Final",
+      "servidor": "Servidor",
+      "diario": "Diario"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "doealDataminingApp": {
+    "servidor": {
+      "home": {
+        "title": "Servidors",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Servidor",
+        "createOrEditLabel": "Criar ou editar Servidor",
+        "notFound": "Nenhum Servidor encontrado"
+      },
+      "created": "Um novo Servidor foi criado com o identificador {{ param }}",
+      "updated": "Um Servidor foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Servidor foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Servidor {{ id }}?"
+      },
+      "detail": {
+        "title": "Servidor"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "cpf": "Cpf",
+      "matricula": "Matricula",
+      "cargo": "Cargo",
+      "concessao": "Concessao"
+    }
+  }
+}

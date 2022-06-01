@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20220525210250",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "servidor",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "matricula",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cargo",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Servidor",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "concessao",
+      "otherEntityRelationshipName": "servidor",
+      "ownerSide": false,
+      "relationshipName": "concessao",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

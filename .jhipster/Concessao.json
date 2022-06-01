@@ -1,0 +1,54 @@
+{
+  "applications": "*",
+  "changelogDate": "20220525210251",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "concessao",
+  "fields": [
+    {
+      "fieldName": "dataAssinatura",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "portaria",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "periodoAquisitivo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tempoAfastamento",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dataInicio",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dataFinal",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Concessao",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "servidor",
+      "otherEntityRelationshipName": "concessao",
+      "ownerSide": true,
+      "relationshipName": "servidor",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "diario",
+      "otherEntityRelationshipName": "concessao",
+      "relationshipName": "diario",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

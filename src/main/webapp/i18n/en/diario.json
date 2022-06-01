@@ -1,0 +1,27 @@
+{
+  "doealDataminingApp": {
+    "diario": {
+      "home": {
+        "title": "Diarios",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Diario",
+        "createOrEditLabel": "Create or edit a Diario",
+        "notFound": "No Diarios found"
+      },
+      "created": "A new Diario is created with identifier {{ param }}",
+      "updated": "A Diario is updated with identifier {{ param }}",
+      "deleted": "A Diario is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Diario {{ id }}?"
+      },
+      "detail": {
+        "title": "Diario"
+      },
+      "id": "ID",
+      "dataPublicacao": "Data Publicacao",
+      "ano": "Ano",
+      "numero": "Numero",
+      "concessao": "Concessao"
+    }
+  }
+}

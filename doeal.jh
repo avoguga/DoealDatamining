@@ -20,6 +20,10 @@ entity Concessao {
     dataFinal LocalDate
 }
 
+entity PDF {
+	pdf AnyBlob,
+}
+
 relationship OneToMany {
 	Diario to Concessao,
 } 

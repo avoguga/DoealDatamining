@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './upload.scss';
 
 const UploadFile = () => {
     const [files, setFiles]: any = useState('');
@@ -63,7 +64,8 @@ const UploadFile = () => {
     return(
 
       <form onSubmit={fileSubmitHandler}>
-         <input type="file" name='files' multiple onChange={uploadFileHandler}/>
+         <input className="inputFile" type="file" name='files' multiple onChange={uploadFileHandler}/>
+         <br />
          <button type='submit'>Upload</button>
          {!fileSize && <p style={{color:'red'}}>O tamanho do arquivo é muito grande!</p>}
          {fileUploadProgress && <p style={{color:'red'}}>Arquivo(s) sendo enviado(s)</p>}

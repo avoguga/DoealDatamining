@@ -11,6 +11,7 @@ import { IServidor } from 'app/shared/model/servidor.model';
 import { getEntities } from './servidor.reducer';
 
 export const Servidor = (props: RouteComponentProps<{ url: string }>) => {
+  
   const dispatch = useAppDispatch();
 
   const servidorList = useAppSelector(state => state.servidor.entities);

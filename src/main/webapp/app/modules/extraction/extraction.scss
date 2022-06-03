@@ -1,15 +1,13 @@
 /* ==========================================================================
-Main page styles
+Extraction page styles
 ========================================================================== */
 
-h1 {
-  color: #1f4672;
+#fileInput{
+
 }
-.subTitle {
-  color: #3B6799;
-}
-#video {
-  width: 100px;
-  height: 100px;
-  background-color: black;
+
+.titleInput{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
 }

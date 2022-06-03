@@ -9,7 +9,7 @@ const UploadFile = () => {
     //for displaying response message
     const [fileUploadResponse, setFileUploadResponse] = useState(null);
     //base end point url
-    const FILE_UPLOAD_BASE_ENDPOINT = "http://localhost:8080";
+    const FILE_UPLOAD_BASE_ENDPOINT = "http://localhost:8000";
 
     const uploadFileHandler = (event) => {
         setFiles(event.target.files);
@@ -24,7 +24,7 @@ const UploadFile = () => {
         const formData = new FormData();
     
         for (let i = 0; i < files.length; i++) {
-            if (files[i].size > 1024){
+            if (files[i].size > 99999){
                 setFileSize(false);
                 setFileUploadProgress(false);
                 setFileUploadResponse(null);
@@ -38,9 +38,9 @@ const UploadFile = () => {
             method: 'POST',
             body: formData
         };
-        fetch(FILE_UPLOAD_BASE_ENDPOINT+'/upload', requestOptions)
+        fetch(FILE_UPLOAD_BASE_ENDPOINT+'/arquivos', requestOptions)
             .then(async response => {
-                const isJson = response.headers.get('content-type')?.includes('application/json');
+                const isJson = response.headers.get('content-type')?.includes('multipart/form-data');
                 const data = isJson && await response.json();
 
                 // check for error response
@@ -63,10 +63,10 @@ const UploadFile = () => {
     return(
 
       <form onSubmit={fileSubmitHandler}>
-         <input type="file"  multiple onChange={uploadFileHandler}/>
+         <input type="file" name='files' multiple onChange={uploadFileHandler}/>
          <button type='submit'>Upload</button>
-         {!fileSize && <p style={{color:'red'}}>File size exceeded!!</p>}
-         {fileUploadProgress && <p style={{color:'red'}}>Uploading File(s)</p>}
+         {!fileSize && <p style={{color:'red'}}>O tamanho do arquivo é muito grande!</p>}
+         {fileUploadProgress && <p style={{color:'red'}}>Arquivo(s) sendo enviado(s)</p>}
         {fileUploadResponse!=null && <p style={{color:'green'}}>{fileUploadResponse}</p>}
       </form>
 

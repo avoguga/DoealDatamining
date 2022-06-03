@@ -7,9 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Brand = () => (
   <NavbarBrand tag={Link} to="/" className="brand-logo">
-    <span className="brand-title">
-      <Translate contentKey="global.title">DoealDatamining</Translate>
-    </span>
+    <span className="brand-title">Facilita Doeal</span>
   </NavbarBrand>
 );
 
@@ -20,6 +18,15 @@ export const Home = () => (
       <span>
         <Translate contentKey="global.menu.home">Home</Translate>
       </span>
+    </NavLink>
+  </NavItem>
+);
+
+export const Extraction = () => (
+  <NavItem>
+    <NavLink tag={Link} to="/extraction" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="database" />
+      <span>Mineração</span>
     </NavLink>
   </NavItem>
 );

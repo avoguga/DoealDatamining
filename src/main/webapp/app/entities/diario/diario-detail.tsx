@@ -53,7 +53,7 @@ export const DiarioDetail = (props: RouteComponentProps<{ id: string }>) => {
           </dt>
           <dd>{diarioEntity.numero}</dd>
         </dl>
-        <Button tag={Link} to="/diario" replace color="info" data-cy="entityDetailsBackButton">
+        <Button tag={Link} to="/diario" replace color="secondary" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}
           <span className="d-none d-md-inline">
             <Translate contentKey="entity.action.back">Back</Translate>

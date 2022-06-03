@@ -30,9 +30,9 @@ export const Servidor = (props: RouteComponentProps<{ url: string }>) => {
   return (
     <div>
       <h2 id="servidor-heading" data-cy="ServidorHeading">
-        <Translate contentKey="doealDataminingApp.servidor.home.title">Servidors</Translate>
+        <Translate contentKey="doealDataminingApp.servidor.home.title">Servidores</Translate>
         <div className="d-flex justify-content-end">
-          <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
+          <Button className="me-2" color="primary" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
             <Translate contentKey="doealDataminingApp.servidor.home.refreshListLabel">Refresh List</Translate>
           </Button>
@@ -80,7 +80,7 @@ export const Servidor = (props: RouteComponentProps<{ url: string }>) => {
                   <td>{servidor.cargo}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
-                      <Button tag={Link} to={`/servidor/${servidor.id}`} color="info" size="sm" data-cy="entityDetailsButton">
+                      <Button tag={Link} to={`/servidor/${servidor.id}`} color="secondary" size="sm" data-cy="entityDetailsButton">
                         <FontAwesomeIcon icon="eye" />{' '}
                         <span className="d-none d-md-inline">
                           <Translate contentKey="entity.action.view">View</Translate>

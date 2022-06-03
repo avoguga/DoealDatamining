@@ -31,7 +31,7 @@ export const Diario = (props: RouteComponentProps<{ url: string }>) => {
       <h2 id="diario-heading" data-cy="DiarioHeading">
         <Translate contentKey="doealDataminingApp.diario.home.title">Diarios</Translate>
         <div className="d-flex justify-content-end">
-          <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
+          <Button className="me-2" color="primary" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
             <Translate contentKey="doealDataminingApp.diario.home.refreshListLabel">Refresh List</Translate>
           </Button>
@@ -77,7 +77,7 @@ export const Diario = (props: RouteComponentProps<{ url: string }>) => {
                   <td>{diario.numero}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
-                      <Button tag={Link} to={`/diario/${diario.id}`} color="info" size="sm" data-cy="entityDetailsButton">
+                      <Button tag={Link} to={`/diario/${diario.id}`} color="secondary" size="sm" data-cy="entityDetailsButton">
                         <FontAwesomeIcon icon="eye" />{' '}
                         <span className="d-none d-md-inline">
                           <Translate contentKey="entity.action.view">View</Translate>

@@ -85,7 +85,7 @@ export const ConcessaoDetail = (props: RouteComponentProps<{ id: string }>) => {
           </dt>
           <dd>{concessaoEntity.diario ? concessaoEntity.diario.id : ''}</dd>
         </dl>
-        <Button tag={Link} to="/concessao" replace color="info" data-cy="entityDetailsBackButton">
+        <Button tag={Link} to="/concessao" replace color="secondary" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}
           <span className="d-none d-md-inline">
             <Translate contentKey="entity.action.back">Back</Translate>

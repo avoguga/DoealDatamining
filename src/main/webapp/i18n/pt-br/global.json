@@ -10,6 +10,7 @@
         "diario": "Diario",
         "servidor": "Servidor",
         "concessao": "Concessao",
+        "pdf": "PDF",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

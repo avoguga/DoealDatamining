@@ -2,7 +2,7 @@
   "doealDataminingApp": {
     "servidor": {
       "home": {
-        "title": "Servidores",
+        "title": "Servidors",
         "refreshListLabel": "Atualizar lista",
         "createLabel": "Criar novo Servidor",
         "createOrEditLabel": "Criar ou editar Servidor",

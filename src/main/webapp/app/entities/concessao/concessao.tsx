@@ -31,7 +31,7 @@ export const Concessao = (props: RouteComponentProps<{ url: string }>) => {
       <h2 id="concessao-heading" data-cy="ConcessaoHeading">
         <Translate contentKey="doealDataminingApp.concessao.home.title">Concessaos</Translate>
         <div className="d-flex justify-content-end">
-          <Button className="me-2" color="primary" onClick={handleSyncList} disabled={loading}>
+          <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
             <Translate contentKey="doealDataminingApp.concessao.home.refreshListLabel">Refresh List</Translate>
           </Button>
@@ -103,7 +103,7 @@ export const Concessao = (props: RouteComponentProps<{ url: string }>) => {
                   <td>{concessao.diario ? <Link to={`/diario/${concessao.diario.id}`}>{concessao.diario.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
-                      <Button tag={Link} to={`/concessao/${concessao.id}`} color="secondary" size="sm" data-cy="entityDetailsButton">
+                      <Button tag={Link} to={`/concessao/${concessao.id}`} color="info" size="sm" data-cy="entityDetailsButton">
                         <FontAwesomeIcon icon="eye" />{' '}
                         <span className="d-none d-md-inline">
                           <Translate contentKey="entity.action.view">View</Translate>

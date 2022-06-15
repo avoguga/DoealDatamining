@@ -4,5 +4,4 @@ import io.undertow.server.handlers.form.FormData;
 
 public class ArquivoModelResponse {
     private String arquivo;
-
 }

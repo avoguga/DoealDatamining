@@ -2,7 +2,9 @@ package com.doealdm.client.arquivos;
 
 import io.undertow.server.handlers.form.FormData;
 
+import java.util.List;
+
 
 public interface ArquivoClient {
-    ArquivoModelResponse buscarArquivo(String arquivo);
+    List<String> buscarArquivo();
 }

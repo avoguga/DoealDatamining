@@ -1,8 +1,11 @@
 package com.doealdm.infra.client;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import net.bytebuddy.implementation.bytecode.collection.ArrayAccess;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -22,11 +25,9 @@ public class ArquivoClientImpl implements ArquivoClient {
         this.restTemplate = restTemplate;
     }
 
-    @Override
-    public ArquivoModelResponse buscarArquivo(String arquivo) {
+    public List<String> buscarArquivo( ) {
         String url = "http://127.0.0.1:8000/arquivos";
-        ArquivoModelResponse response = restTemplate.getForObject(url, ArquivoModelResponse.class);
+        List<String> response = restTemplate.getForObject(url, ArrayList.class);
         return response;
     }
-
 }

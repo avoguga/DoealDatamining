@@ -16,7 +16,8 @@ public class ArquivoService {
         this.arquivoClient = arquivoClient;
     }
 
-    public ArquivoModelResponse buscarArquivo(String arquivo) {
-        return this.arquivoClient.buscarArquivo(arquivo);
+    public ArquivoModelResponse buscarArquivo() {
+        this.arquivoClient.buscarArquivo();
+        return new ArquivoModelResponse();
     }
 }

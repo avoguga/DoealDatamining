@@ -20,6 +20,13 @@ export const Home = () => {
           ></iframe>
         </div>
       </Col>
+      <Col>
+        <br />
+        <h5>
+          Os arquivos do Diário Oficial do Estado de Alagoas (DOEAL)
+          <br /> podem ser visualizados e baixados <a href="https://www.jusbrasil.com.br/diarios/DOEAL/">aqui</a>
+        </h5>
+      </Col>
     </Row>
   );
 };

@@ -37,7 +37,7 @@ export const App = () => {
 
   const paddingTop = '60px';
   return (
-    <Router basename={baseHref}>
+    <Router basename={baseHref} >
       <div className="app-container" style={{ paddingTop }}>
         <ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />
         <ErrorBoundary>
@@ -56,8 +56,8 @@ export const App = () => {
               <AppRoutes />
             </ErrorBoundary>
           </Card>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </Router>
   );

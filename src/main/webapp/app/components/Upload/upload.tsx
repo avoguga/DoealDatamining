@@ -25,7 +25,7 @@ const UploadFile = () => {
         const formData = new FormData();
     
         for (let i = 0; i < files.length; i++) {
-            if (files[i].size > 99999){
+            if (files[i].size > 9999999999){
                 setFileSize(false);
                 setFileUploadProgress(false);
                 setFileUploadResponse(null);

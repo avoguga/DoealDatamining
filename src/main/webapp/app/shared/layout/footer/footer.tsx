@@ -7,8 +7,14 @@ import { Col, Row } from 'reactstrap';
 const Footer = () => (
   <div className="footer page-content">
     <Row>
-      <Col md="12">
-        
+      <Col>
+        <p className='footer-text'>© 2022</p>
+      </Col>
+      <Col>
+        <p className='footer-text'>Facilita Doeal</p>
+      </Col>
+      <Col>
+        <p className='footer-text'>Simplificando sua vida</p>
       </Col>
     </Row>
   </div>

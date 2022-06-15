@@ -1,0 +1,21 @@
+{
+  "applications": "*",
+  "changelogDate": "20220615200933",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "pdf",
+  "fields": [
+    {
+      "fieldName": "pdf",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PDF",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

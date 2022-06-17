@@ -11,6 +11,8 @@ import com.doealdm.service.ArquivoService;
 
 import io.undertow.server.handlers.form.FormData;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api")
 public class ArquivoResource {
@@ -22,7 +24,7 @@ public class ArquivoResource {
     }
 
     @GetMapping("/arquivos")
-    public void buscarArquivo() {
-         this.arquivoService.buscarArquivo();
+    public ResponseEntity<List<String>> buscarArquivo() {
+         return ResponseEntity.ok().body(this.arquivoService.buscarArquivo());
     }
 }

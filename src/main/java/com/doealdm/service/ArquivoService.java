@@ -7,6 +7,8 @@ import com.doealdm.client.arquivos.ArquivoModelResponse;
 
 import io.undertow.server.handlers.form.FormData;
 
+import java.util.List;
+
 @Service
 public class ArquivoService {
 
@@ -16,8 +18,7 @@ public class ArquivoService {
         this.arquivoClient = arquivoClient;
     }
 
-    public ArquivoModelResponse buscarArquivo() {
-        this.arquivoClient.buscarArquivo();
-        return new ArquivoModelResponse();
+    public List<String> buscarArquivo() {
+        return this.arquivoClient.buscarArquivo();
     }
 }

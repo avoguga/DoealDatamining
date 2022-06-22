@@ -1,19 +1,36 @@
 package com.doealdm.domain;
 
-public class Arquivo {
-    private String arquivo;
+import io.undertow.server.handlers.form.FormData;
+import org.springframework.web.multipart.MultipartFile;
 
-    public String getNome() {
-        return this.arquivo;
+public class Arquivo {
+    private String nomeArquivo;
+    private MultipartFile arquivo;
+
+    public String getNomeArquivo() {
+        return this.nomeArquivo;
     }
 
-    public Arquivo arquivo(String arquivo) {
-        this.setArquivo(arquivo);
+    public void setNomeArquivo(String nomeArquivo) {
+        this.nomeArquivo = nomeArquivo;
+    }
+
+    public Arquivo nomeArquivo(String nomeArquivo) {
+        this.setNomeArquivo(nomeArquivo);
         return this;
     }
 
-    public void setArquivo(String arquivo) {
-        this.arquivo = arquivo;
+    public MultipartFile getArquivo() {
+        return this.arquivo;
+    }
+
+    public void setArquivo(MultipartFile pdf) {
+        this.arquivo = pdf;
+    }
+
+    public Arquivo pdf(MultipartFile pdf) {
+        this.setArquivo(pdf);
+        return this;
     }
 
 }
